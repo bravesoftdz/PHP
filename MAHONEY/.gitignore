@@ -1,0 +1,35 @@
+# User specific & automatically generated files #
+#################################################
+/app/Config/core.php
+/app/webroot/thumbs/*
+!/app/webroot/thumbs/empty
+/app/webroot/files/*
+!/app/webroot/files/empty
+/app/Config/installed
+/app/tmp/*
+/app/View/Themed/*
+!/app/View/Themed/MahoneyXperience
+/app/Plugin/*
+/app/Config/Environment/*
+!/app/Config/Environment/default.php
+!/app/Config/Environment/default.php.template
+/lib/Cake/Console/Templates/skel/tmp/
+/plugins
+/app/Vendor/*
+!/app/Vendor/Mahoney/System
+!/app/Vendor/google-api
+/build
+/dist
+/tags
+/nbproject
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db

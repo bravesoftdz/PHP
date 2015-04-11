@@ -1,0 +1,64 @@
+language: php
+
+php:
+  - 5.4
+  - 5.5
+
+env:
+  - DB=mysql
+
+matrix:
+  include:
+    - php: 5.4
+      env:
+        - PHPCS=1
+
+before_script:
+  - sudo locale-gen de_DE
+  - sh -c "if [ '$DB' = 'mysql' ]; then mysql -e 'CREATE DATABASE test_mahoney;'; fi"
+  - chmod -R 777 ./app/tmp
+  - sudo apt-get install lighttpd
+  - sh -c "if [ '$PHPCS' = '1' ]; then pear channel-discover pear.cakephp.org; fi"
+  - sh -c "if [ '$PHPCS' = '1' ]; then pear install --alldeps cakephp/CakePHP_CodeSniffer; fi"
+  - phpenv rehash
+  - set +H
+  - echo "<?php
+    class DATABASE_CONFIG {
+    private \$identities = array(
+      'mysql' => array(
+        'datasource' => 'Database/Mysql',
+        'host' => '0.0.0.0',
+        'login' => 'travis'
+      )
+    );
+    public \$default = array(
+      'persistent' => false,
+      'host' => '',
+      'login' => '',
+      'password' => '',
+      'database' => 'test_mahoney',
+      'prefix' => ''
+    );
+    public function __construct() {
+      \$db = 'mysql';
+      if (!empty(\$_SERVER['DB'])) {
+        \$db = \$_SERVER['DB'];
+      }
+      foreach (array('default') as \$source) {
+        \$config = array_merge(\$this->{\$source}, \$this->identities[\$db]);
+        if (is_array(\$config['database'])) {
+          \$config['database'] = \$config['database'][\$source];
+        }
+        if (!empty(\$config['schema']) && is_array(\$config['schema'])) {
+          \$config['schema'] = \$config['schema'][\$source];
+        }
+        \$this->{\$source} = \$config;
+      }
+    }
+    }" > app/Config/database.php
+
+script:
+  - sh -c "if [ '$PHPCS' = '1' ]; then phpcs -p --extensions=php --standard=CakePHP ./lib/Cake; elif [ '$DB' = 'mysql' ]; then ./lib/Cake/Console/cake test core AllTests --stderr; else ./lib/Cake/Console/cake test core AllDbRelated --stderr; fi"
+
+notifications:
+  email: false

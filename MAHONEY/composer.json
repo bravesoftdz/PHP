@@ -1,0 +1,28 @@
+{
+    "name": "mahoney",
+    "description": "Mahoney é um sistema feito para desenvolvedores construirem aplicações consistentes voltadas à distribuição comercial",
+    "type": "library",
+    "keywords": ["framework"],
+    "homepage": "http://mahoney-cms.github.io",
+    "license": "MPL",
+    "authors": [
+        {
+            "name": "Organização Mahoney",
+            "homepage": "https://github.com/mahoney-cms"
+        }
+    ],
+    "support": {
+        "source": "https://github.com/mahoney-cms/mahoney/wiki"
+    },
+    "require": {
+        "php": ">=5.4",
+        "ext-mcrypt": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*",
+        "cakephp/debug_kit" : "2.2.*"
+    },
+    "bin": [
+        "lib/Cake/Console/cake"
+    ]
+}
