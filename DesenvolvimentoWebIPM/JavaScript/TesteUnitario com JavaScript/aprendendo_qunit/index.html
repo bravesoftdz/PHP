@@ -1,0 +1,55 @@
+﻿<html>
+<head>
+  <meta charset="utf-8">
+  <title>Artigo sobre o QUnit </title>
+  <!--Inclui a folha de estilo do QUnit -->
+  <link rel="stylesheet" href="http://code.jquery.com/qunit/qunit-1.19.0.css">
+  <script language="javascript">
+  	//Função que realiza a multiplicação de dois valores
+	function multiplicar(a, b) {
+   		return a * b;
+	}
+	
+	//Função Pessoa com duas propriedades
+    function Pessoa(nome,email) {
+           this.nome = nome
+        this.email = email
+    }
+
+    //Objeto literal com duas propriedades inicializadas com nulo
+    var humano = {
+       nome: null,
+       email: null
+    };
+	
+	function verificaSeONumeroEPar(numero) {
+		   if (typeof numero !== 'number') {
+			  throw new Error('O argumento (numero) passado por parâmetro não é um número');
+		   }
+	
+		   return numero % 2 === 0;
+		}
+ 
+ function obterNumeroMaior() {
+   var numeroMaior = -Infinity;
+   for (var i = 0; i < arguments.length; i++) {
+      if (arguments[i] > numeroMaior) {
+         numeroMaior = arguments[i];
+      }
+   }
+
+   return numeroMaior;
+}
+  </script>
+</head>
+<body>
+  <!-- Interface de usuário do QUnit-->
+  <div id="qunit"></div>
+  <div id="qunit-fixture"></div>
+  <!-- Fim -->
+  <!-- Incluir arquivo javascript de funcionamento do QUnit-->
+  <script src="http://code.jquery.com/qunit/qunit-1.19.0.js"></script>
+  <!-- Incluir arquivo javascript com os testes utilizando o QUnit-->
+  <script src="tests.js"></script>
+</body>
+</html>
