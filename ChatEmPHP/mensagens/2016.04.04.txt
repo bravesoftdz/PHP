@@ -1,0 +1,52 @@
+<b style='letter-spacing:1px;color:#1E90FF;'>user1: </b> Entrou no chat...
+
+<b style='letter-spacing:1px;color:#1E90FF;'>user1: </b> ola
+
+<b style='letter-spacing:1px;color:#FF4500;'>user2: </b> Entrou no chat...
+
+<b style='letter-spacing:1px;color:#FF4500;'>user2: </b> daew
+
+<b style='letter-spacing:1px;color:#1E90FF;'>user1: </b> Entrou no chat...
+
+<b style='letter-spacing:1px;color:#1E90FF;'>user1: </b> opa
+
+<b style='letter-spacing:1px;color:#FF4500;'>user2: </b> Entrou no chat...
+
+<b style='letter-spacing:1px;color:#FF4500;'>user2: </b> Entrou no chat...
+
+<b style='letter-spacing:1px;color:#FFFFFF;'>user2: </b> Entrou no chat...
+
+<b style='letter-spacing:1px;color:#FFFFFF;'>user2: </b> daeww
+
+<b style='letter-spacing:1px;color:#FFFF00;'>user1: </b> Entrou no chat...
+
+<b style='letter-spacing:1px;color:#FFFF00;'>user1: </b> teste
+
+<b style='letter-spacing:1px;color:#FFFFFF;'>user2: </b> teste user 2
+
+<b style='letter-spacing:1px;color:#FFFFFF;'>user2: </b> Entrou no chat...
+
+<b style='letter-spacing:1px;color:#FFFFFF;'>user2: </b> boa
+
+<b style='letter-spacing:1px;color:#FFFF00;'>user1: </b> qe?
+
+<b style='letter-spacing:1px;color:#FFFF00;'>user1: </b> Entrou no chat...
+
+<b style='letter-spacing:1px;color:#FFFF00;'>user1: </b> Entrou no chat...
+
+<b style='letter-spacing:1px;color:#FFFF00;'>user1: </b> Entrou no chat...
+
+<b style='letter-spacing:1px;color:#8B4513;'>user1: </b> Entrou no chat...
+
+<b style='letter-spacing:1px;color:#8B4513;'>user1: </b> teste
+
+<b style='letter-spacing:1px;color:#8B4513;'>user1: </b> novo
+
+<b style='letter-spacing:1px;color:#8B4513;'>user1: </b> Entrou no chat...
+
+<b style='letter-spacing:1px;color:#8B4513;'>user1: </b> Entrou no chat...
+
+<b style='letter-spacing:1px;color:#8B4513;'>user1: </b> novassss
+
+---- histórico deletado com sucesso ------> user1 saiu!
+

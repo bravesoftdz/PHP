@@ -1,0 +1,5 @@
+DADOS DE CONFIGURACAO
+nome banco:sistema_comercial
+usuario criado:
+login:admin
+senha:admin
