@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<phpunit>
+	<testsuites>
+		<testsuite name="Suite de testes e permissoes">
+			<file> tests/Application/Exemplo/alunoTest.php</file>
+		</testsuite>
+	</testsuites>
+</phpunit>
